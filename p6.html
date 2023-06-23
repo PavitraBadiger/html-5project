@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        dialog{
+            background: green;
+            color:bisque;
+            margin:20px;
+            border: 2px solid brown;
+        }
+        
+    </style>
+    <title>HTML-5</title>
+</head>
+
+<body>
+    <center>
+        <h1>DETAILS TAG</h1>
+        <p>This tag is used to specifies the additional details on the web page that the user can view or hide on demand
+        </p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>THIS IS SUMMARY TAG</h3>
+        <p>The <b>HTML SUMMARY</b> tag is used with <b> DETAILS </b> tag. it is ussed as summary ,caption or legend for
+            the content of a details elements. </p>
+    </center>
+    <hr>
+
+    <details>
+        <!-- <summary>HTML</summary> -->
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ea ex iusto laboriosam dolorum, suscipit
+            consequuntur doloribus consectetur culpa ratione recusandae mollitia officiis distinctio soluta tempore
+            praesentium, vitae ab temporibus!</P>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sunt blanditiis iste dolor voluptatibus nam
+            expedita illo, alias animi cum! Animi dicta quos aliquid magni sint dolorem qui veniam nemo!</p>
+    </details>
+    <details>
+        <summary>JS</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloribus modi accusamus eaque placeat
+            similique repudiandae pariatur at rem. Cum nostrum et at velit incidunt minima explicabo voluptatibus
+            voluptates officia?</p>
+    </details>
+    <hr>
+
+    <center>
+        <h3>TIME TAG....!</h3>
+        <p><b>HTML TIME TAG </b> is used to define the date and time. it displays time value ina 24hr clock or precise
+            date in gregorian calender in HTML</p>
+    </center>
+
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis accusamus aut at time 2:30 PM
+        voluptatem pariatur veritatis minus. Explicabo repellat, repellendus, quo facere pariatur assumenda, rem a quod
+        voluptatem ullam soluta eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, inventore unde
+        accusantium natus tenetur, repellendus blanditiis consequatur maiores veniam recusandae, perspiciatis ducimus
+        velit nesciunt officiis aspernatur obcaecati neque non quaerat.</p>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem perferendis accusamus aut at time
+        <time>2:30</time> PM voluptatem pariatur veritatis minus. Explicabo repellat, repellendus, quo facere pariatur
+        assumenda, rem a quod voluptatem ullam soluta eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Id, inventore unde accusantium natus tenetur, repellendus blanditiis consequatur maiores veniam recusandae,
+        perspiciatis ducimus velit nesciunt officiis aspernatur obcaecati neque non quaerat.</p>
+    <hr>
+
+    <center>
+        <h3> THIS IS THE DIALOG TAG</h3>
+        <p><b>(this tag to creat a new popup dialog on web page.)</b></p>
+    </center>
+    <hr>
+
+    <button type="button" id="openDialog">open dialog</button>
+    <dialog id="dialogID">
+        <button  type="button" id="closeDialog">&times;</button>
+        <h1>FULLSTACK...!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nisi voluptatum a iure ex suscipit, nobis aliquid libero nesciunt eum, reiciendis commodi. Labore quo fuga in eos inventore. Ducimus, deserunt.</p>
+    </dialog>
+
+    <script>
+        document.getElementById("openDialog").onclick =function(){
+            document.getElementById("dialogID").show();
+         };
+         document.getElementById("closeDialog").onclick = function(){
+            document.getElementById("dialogID").close();
+
+         };
+    </script>
+    
+
+</body>
+
+</html>
